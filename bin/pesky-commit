@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# make it less searchable
+SUFFIX="kyfish.co.uk"
+
+GIT_COMMITTER_NAME="Ariel" GIT_COMMITTER_EMAIL="developers@pes$SUFFIX" git commit --author "Ariel <developers@pes$SUFFIX>" "$@"

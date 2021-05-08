@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+WHO=$(whoami)
+
+read -p "What's your name? [default=$WHO]: " YOUR_NAME
+: ${YOUR_NAME:=$WHO}
+
+zip -r boat-orders-$YOUR_NAME.zip . -x "node_modules/*" "bin/*"

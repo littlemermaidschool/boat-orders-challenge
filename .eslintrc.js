@@ -2,11 +2,7 @@ module.exports = {
 	root: true,
 	parser: "@typescript-eslint/parser",
 	plugins: ["jest", "@typescript-eslint", "import"],
-	extends: [
-		"@pesky-fish/eslint-config/javascript",
-		"prettier",
-		"plugin:@typescript-eslint/recommended",
-	],
+	extends: ["prettier", "plugin:@typescript-eslint/recommended"],
 	env: {
 		"jest/globals": true,
 	},

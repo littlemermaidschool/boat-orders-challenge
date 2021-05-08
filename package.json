@@ -13,11 +13,9 @@
 	"dependencies": {
 		"dayjs": "^1.10.4"
 	},
-	"prettier": "@pesky-fish/prettier",
 	"lint-staged": {
 		"src/**/*.{js,ts}": [
-			"prettier --write src/",
-			"eslint --ext .js --ext .ts src/ --fix"
+			"prettier --write src/"
 		]
 	},
 	"husky": {
@@ -26,8 +24,6 @@
 		}
 	},
 	"devDependencies": {
-		"@pesky-fish/eslint-config": "1.0.0",
-		"@pesky-fish/prettier": "1.0.0",
 		"@types/jest": "26.0.21",
 		"@typescript-eslint/eslint-plugin": "4.21.0",
 		"@typescript-eslint/parser": "4.21.0",
